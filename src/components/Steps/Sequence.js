@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import SingleSequence from './SingleSequence';
 
 function Sequence(props) {
     return (
@@ -6,15 +7,9 @@ function Sequence(props) {
            
            <div className="contentbox">
            <h2>Template : {props.selected} </h2>
-            <div className="sequencebox">
-              <h3>Step #1 - Day&nbsp; <span id="seqday">1</span></h3>
-            <div>
-            <div className="mailtitlebox">
-              Abc
-            </div>
-            <button className="addmailbutton">+</button>
-            </div>
-            </div>
+            <SingleSequence step="1" days="1" title="Hai wala mail"/>
+            <SingleSequence step="2" days="5" title="Hai Again"/>
+            <SingleSequence step="3" days="7" title="A little about us"/>
           </div>
     )
 }

@@ -10,7 +10,7 @@ class Navbar extends Component {
                 <ol>
                     <Navitem title="Dashboard" linkurl="/"></Navitem>
                     <Navitem title="People" linkurl="/"></Navitem>
-                    <Navitem title="Campaigns" linkurl="/"></Navitem>
+                    <Navitem title="Campaigns" active={true} linkurl="/"></Navitem>
                     <Navitem title="Templates" linkurl="/"></Navitem>
                     <Navitem title="Settings" linkurl="/"></Navitem>
                     

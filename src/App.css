@@ -39,6 +39,10 @@ align-items: center;
   display: flex;
   flex-direction: column;
   background-color: rgb(229, 229, 229);
+}.activenav
+{
+  color: rgb(71,129,255);
+  font-weight: bold;
 }
 .longbar
 {
