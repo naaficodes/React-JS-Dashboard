@@ -1,38 +1,308 @@
-.App {
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  display: flex;
+  justify-content: center;
+}
+.app
+{
+  max-width: 1366px;
+  width: 1366;
+  height: 100vh;
+  display: flex;
+}
+.sidebar
+{
+  width: 250px;
+  height: 100vh;
+background-color: white;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.sidebar img
+{
+  margin:20px 0px;
+}
+.sidebar ol li{
+  list-style-type: square;
+  color: black;
+  margin: 20px;
+  font-size: 1.2rem ;
+}
+.maincon
+{
+  width: 1116px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(229, 229, 229);
+}
+.longbar
+{
+  max-width: 100%;
+  height: 80px;
+  background-color: white;
+}
+.titleandbutton
+{
+  padding: 0px 40px;
+  display: flex;
+  align-items: center;
+}
+.buttons
+{
+  text-align: right;
+  width: 100%;
+}
+button{
+  padding: 10px;
+  min-width: 130px;
+  width: auto;
+  margin:0px 10px;
+  border-radius: 5px;
+}
+button:hover
+{
+  cursor: pointer;
+}
+button:focus {outline:0;}
+.green
+{
+  background-color: rgb(116,193,88);
+  border: 2px solid rgb(116,193,88);
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+.green:hover
+{
+  background: transparent;
+  border: 2px solid rgb(116,193,88);
+  color: rgb(116,193,88);
+}
+.blue
+{
+  background-color: rgb(71,129,255);
+  border: 2px solid rgb(71,129,255);
+  color: white;
+  font-size: large;
+  font-weight: bold;
+}
+.blue:hover
+{
+  background: transparent;
+  border: 2px solid rgb(71,129,255);
+  color: rgb(71,129,255);
+}
+.bread
+{
+display: flex;
+padding: 0;
+margin: 0;
+justify-content: space-between;
+height: 100%;
+align-items: center;
+
+}
+.bread li
+{
+  color: black;
+list-style-type:none;
+padding: 15px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bread li:hover
+{
+  cursor: pointer;
+}
+.complete
+{
+  background-color:rgb(246,0,113);
+  color:white !important;
+  font-weight: bold;
+}
+.step
+{
+  height: 20px;
+  width: 20px;
   text-align: center;
+  padding: 10px;
+  border-radius: 50%;
+  background-color:rgba(229, 229, 229, 0.7);
+  margin-right:15px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a
+{
+  color:black;
+  text-decoration: none;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a:hover
+{
+  text-decoration: underline;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cmodal
+{
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  left:0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modalbox
+{
+  width: 50%;
+  min-height: 50%;
+  height: auto;
+  background-color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+}
+.cross
+{
+  width: 100%;
+  text-align: right;
+  font-weight: bolder;
+}
+.cross:hover
+{
+  cursor: pointer;
+}
+.modalbox section
+{
+  margin: 10px;
+}
+.modaltitle
+{font-size: 2rem;
+font-weight: bold;}
+.csvmodal
+{
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.disabled
+{
+  opacity: 0.5;
+}
+input[type='file']{
+
+  margin:30px 0px 30px 80px  ;
+}
+.duodiv
+{
+  display: flex;
+
+  width: 100%;
+  height: 100%;
+  
+}
+.duodiv div
+{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex:5;
+}
+.duodiv div button
+{
+  margin: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+li{
+  list-style-type: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contentbox
+{
+  /* background-color: red; */
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+
+
 }
+.sequencebox
+{
+  height:130px ;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.sequencebox div
+{
+  display: flex;
+}
+.sequencebox button
+{
+  flex:1;
+  height:60px;
+  font-size: 1.5rem;
+  color: red;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+
+}
+#seqday
+{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: whitesmoke;
+}
+.mailtitlebox
+{
+  background-color: white;
+  flex: 9;
+  height:60px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  font-size: 1.2rem;
+}
+.peopletable
+{
+  border-collapse: collapse;
+  width: 100%;
+}
+.peopletable tr td
+{
+  border-top: 2px solid rgba(128, 128, 128, 0.753);
+  padding: 20px;
+}
+.peopletable tr:hover
+{
+  background-color: lightgray;
+}
+.downloadcsv
+{
+  margin-top:20px;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.mrt40
+{
+  margin-top:40px;
+}
+/* @media screen and (min-width : 1366px) {
+  body{
+    background-color: rgb(170,19,89);
+  }
+} */
